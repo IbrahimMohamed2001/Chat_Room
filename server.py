@@ -13,6 +13,8 @@ server.listen()
 clients = []
 aliases = []
 
+print("Server is running...")
+
 def broadcast(message):
     for client in clients:
         client.send(message)
